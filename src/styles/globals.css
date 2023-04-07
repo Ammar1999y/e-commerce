@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button {
+    @apply p-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-md active:from-yellow-500;
+  }
+}
+.gridy {
+  grid-area: 4 /1 / span 1 / span 1;
+}
+@media (min-width: 768px) {
+  .gridy {
+    grid-area: 3 /1 / span 1 / span 2;
+  }
+}
+@media (min-width: 1024px) {
+  .gridy {
+    grid-area: 2 /1 / span 1 / span 3;
+  }
+}
+@media (min-width: 1280px) {
+  .gridy {
+    grid-area: 2 /1 / span 1 / span 4;
+  }
+}

@@ -1,0 +1,50 @@
+.links {
+  position: relative;
+  padding-right: 5px;
+}
+header .father:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.links .icon {
+  width: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.links .icon span {
+  background-color: white;
+  margin-bottom: 3px;
+  height: 2px;
+  width: 100%;
+}
+.links .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+.search_icon {
+  width: 70px;
+  height: 100%;
+  padding: 0 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.span::before {
+  content: '';
+  position: absolute;
+  right: -4px;
+  bottom: -7px;
+  width: 3px;
+  height: 10px;
+  border-radius: 2px;
+  background: black;
+  transform: rotate(-50deg);
+}
